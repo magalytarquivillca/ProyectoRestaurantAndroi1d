@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@color/colorSecond"
     android:paddingStart="10dp"
     android:scrollbarSize="100dp"
@@ -11,21 +11,22 @@
 
     <View
         android:id="@+id/view7"
-        android:layout_width="414dp"
-        android:layout_height="69dp"
-        android:layout_marginBottom="600dp"
+        android:layout_width="398dp"
+        android:layout_height="64dp"
         android:background="@color/colorSecond2"
-        app:layout_constraintBottom_toTopOf="@+id/view9"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
 
     <EditText
         android:id="@+id/NombreMenu"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/rectangulo"
         android:ems="10"
@@ -43,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/rectangulo"
         android:ems="10"
@@ -61,7 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/rectangulo"
         android:ems="10"
@@ -79,22 +80,22 @@
         android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
         android:background="@color/colorSecond3"
         android:text="INSERTAR"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/tomarfoto"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton7" />
+        app:layout_constraintTop_toBottomOf="@+id/menu" />
 
     <Button
         android:id="@+id/tomarfoto"
         android:layout_width="121dp"
         android:layout_height="49dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="40dp"
         android:background="@color/colorSecond3"
         android:drawableStart="@drawable/ic_baseline_camera_alt_24"
@@ -103,13 +104,13 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton7" />
+        app:layout_constraintTop_toBottomOf="@+id/menu" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="111dp"
         android:layout_height="30dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:text=" Foto"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
@@ -119,25 +120,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName13" />
 
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="152dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/colorwhite"
-        android:tint="@color/common_google_signin_btn_text_dark_focused"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:srcCompat="@drawable/ic_baseline_fastfood_24"
-        tools:ignore="VectorDrawableCompat" />
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="129dp"
         android:layout_height="24dp"
-        android:layout_marginTop="16dp"
         android:text="CREAR MENU"
         android:textAlignment="center"
         android:textColor="@color/common_google_signin_btn_text_dark_pressed"
@@ -146,8 +132,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/view7"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintTop_toTopOf="@+id/view7" />
 
     <View
         android:id="@+id/view9"
@@ -157,5 +142,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="89dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -67,7 +67,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/precioxcant1"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -79,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/precioxcant2"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapa"

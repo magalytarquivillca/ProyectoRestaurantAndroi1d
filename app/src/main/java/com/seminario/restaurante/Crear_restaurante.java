@@ -15,14 +15,24 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Crear_restaurante extends AppCompatActivity {
-  TextView restaurantButton;
-  static final int code_camera = 999;
+    Button crearButton;
+    TextView restaurantButton;
+    static final int code_camera = 999;
     private Activity root = this;
+    private Button Ubicacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_restaurante);
+        Ubicacion = (Button)findViewById(R.id.verUbicacion);
+        Ubicacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(Crear_restaurante.this, Ubicacion.class);
+                startActivity(intent);
+            }
+        });
         //Toast.makeText(root, "onCreate", Toast.LENGTH_SHORT).show();
         loadComponents();
 
@@ -44,7 +54,16 @@ public class Crear_restaurante extends AppCompatActivity {
 
 
         });
-        }
+        crearButton = this.findViewById(R.id.crear);
+        crearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(root, Lista_Restaurant.class);
+                root.startActivity(intent);
+            }
+        });
+    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
