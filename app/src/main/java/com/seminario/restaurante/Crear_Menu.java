@@ -127,11 +127,11 @@ public class Crear_Menu extends AppCompatActivity {
                 }
             });
 
-            RequestParams params2 = new RequestParams();
+            /*RequestParams params2 = new RequestParams();
             String id=Datos.substring(7,32);
             params2.add("id",id );
             params2.add("file", rutaimage);
-            Toast.makeText(root, client.toString(), Toast.LENGTH_LONG).show();
+            Toast.makeText(root, client.toString(), Toast.LENGTH_LONG).show();*/
             /*client.put(EndPoints.MENU_UPDATE_SERVICE,params2 ,new JsonHttpResponseHandler(){
                 public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                     try {
@@ -150,7 +150,7 @@ public class Crear_Menu extends AppCompatActivity {
             });*/
             //verificar
             ImageView img = root.findViewById(R.id.menu);
-            img.setImageBitmap(imageBitmap);
+           // img.setImageBitmap(imageBitmap);
             }
         });
     }
@@ -163,8 +163,8 @@ public class Crear_Menu extends AppCompatActivity {
             Bitmap imageBitmap = (Bitmap) photo.get("data");
             rutaimage = (String) data.getDataString();
             //Toast.makeText(root, rutaimage, Toast.LENGTH_LONG).show();
-            img2 = root.findViewById(R.id.imageButton7);
-            img2.setImageBitmap(imageBitmap);
+           img2 = root.findViewById(R.id.menu);
+           img2.setImageBitmap(imageBitmap);
         }
     }
 

@@ -205,6 +205,7 @@
         android:layout_marginTop="20dp"
         android:text="CREAR"
         app:layout_constraintEnd_toStartOf="@+id/verUbicacion"
+        app:layout_constraintHorizontal_bias="0.344"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logorest" />
 
@@ -214,7 +215,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
         android:text="VER UBICACION"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="590dp" />
+        app:layout_constraintTop_toBottomOf="@+id/logorest" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
