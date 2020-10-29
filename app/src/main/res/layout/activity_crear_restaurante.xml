@@ -217,6 +217,8 @@
         android:text="VER UBICACION"
         app:layout_constraintBottom_toTopOf="@+id/view4"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/logorest" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -82,7 +82,6 @@ public class Crear_restaurante extends AppCompatActivity {
 
             }
 
-
         });*/
         restaurantButton.setOnClickListener((new View.OnClickListener() {
             @Override

@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (email.length() != 0 && password.length() != 0){*/
 
-                
+
                 //ENVIO A LA API
                 AsyncHttpClient client = new AsyncHttpClient();
                // AsyncHttpClient client1 = new AsyncHttpClient();
@@ -110,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
         }));
 
     }
+
 
     @Override
     protected void onStart() {

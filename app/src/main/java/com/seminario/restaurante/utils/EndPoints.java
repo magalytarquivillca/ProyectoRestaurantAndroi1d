@@ -13,4 +13,5 @@ public class EndPoints {
     public static String REGISTRARSE_SERVICE = HOST + "cliente";
 
 
+
 }

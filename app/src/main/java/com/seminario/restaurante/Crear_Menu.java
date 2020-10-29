@@ -149,8 +149,13 @@ public class Crear_Menu extends AppCompatActivity {
                 }
             });*/
             //verificar
-            ImageView img = root.findViewById(R.id.menu);
+
+
            // img.setImageBitmap(imageBitmap);
+
+            //ImageView img = root.findViewById(R.id.menu);
+            //img.setImageBitmap(imageBitmap);
+
             }
         });
     }
@@ -161,10 +166,17 @@ public class Crear_Menu extends AppCompatActivity {
         if (requestCode == code_camera && resultCode == RESULT_OK){
             Bundle photo = data.getExtras();
             Bitmap imageBitmap = (Bitmap) photo.get("data");
+            ImageView img = root.findViewById(R.id.menu);
+            img.setImageBitmap(imageBitmap);
             rutaimage = (String) data.getDataString();
             //Toast.makeText(root, rutaimage, Toast.LENGTH_LONG).show();
+
            img2 = root.findViewById(R.id.menu);
            img2.setImageBitmap(imageBitmap);
+
+            //img2 = root.findViewById(R.id.imageButton7);
+            //img2.setImageBitmap(imageBitmap);
+
         }
     }
 
