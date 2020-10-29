@@ -43,16 +43,24 @@ public class Crear_restaurante extends AppCompatActivity {
     static final int PERMISION_CODE = 10;
     private Button Ubicacion;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_restaurante);
+        crearButton =(Button)findViewById(R.id.crear);
         Ubicacion = (Button)findViewById(R.id.verUbicacion);
         Ubicacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 Intent intent = new Intent(Crear_restaurante.this, Ubicacion.class);
                 startActivity(intent);
+            }
+        });
+        crearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(Crear_restaurante.this, Lista_Restaurant.class);
             }
         });
         //Toast.makeText(root, "onCreate", Toast.LENGTH_SHORT).show();
@@ -76,8 +84,9 @@ public class Crear_restaurante extends AppCompatActivity {
 
         });*/
         restaurantButton.setOnClickListener((new View.OnClickListener() {
-        @Override
-            public void onClick(View view) {
+            @Override
+            public void onClick(View v) {
+
 
                 if (checkPermission(Manifest.permission.CAMERA)) {
                     callCamera();

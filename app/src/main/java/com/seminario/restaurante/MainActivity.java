@@ -23,11 +23,13 @@ import cz.msebera.android.httpclient.Header;
 
 public class MainActivity extends AppCompatActivity {
     Button loginButton;
+    Button register;
     private MainActivity root = this;
     TextView h_pedidos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
@@ -43,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
                 root.startActivity(intent);
             }
         });*/
+        register = this.findViewById(R.id.buttonres);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(root,Registrarse.class);
+                root.startActivity(intent);
+            }
+        });
         h_pedidos = this.findViewById(R.id.textView2);
         h_pedidos.setOnClickListener(new View.OnClickListener() {
             @Override

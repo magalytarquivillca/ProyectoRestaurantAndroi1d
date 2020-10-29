@@ -32,7 +32,7 @@ public class Crear_Menu extends AppCompatActivity {
     Button tfButton;
     static final int code_camera = 999;
     private Activity root = this;
-    //ImageView img2;
+    ImageView img2;
     String Datos;
     String rutaimage;
 
@@ -149,8 +149,13 @@ public class Crear_Menu extends AppCompatActivity {
                 }
             });*/
             //verificar
+
+
+           // img.setImageBitmap(imageBitmap);
+
             //ImageView img = root.findViewById(R.id.menu);
             //img.setImageBitmap(imageBitmap);
+
             }
         });
     }
@@ -165,8 +170,13 @@ public class Crear_Menu extends AppCompatActivity {
             img.setImageBitmap(imageBitmap);
             rutaimage = (String) data.getDataString();
             //Toast.makeText(root, rutaimage, Toast.LENGTH_LONG).show();
+
+           img2 = root.findViewById(R.id.menu);
+           img2.setImageBitmap(imageBitmap);
+
             //img2 = root.findViewById(R.id.imageButton7);
             //img2.setImageBitmap(imageBitmap);
+
         }
     }
 

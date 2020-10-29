@@ -10,6 +10,8 @@ public class EndPoints {
     public static String HACER_PEDIDO_SERVICE = HOST + "orden";
     public static String MENU_SERVICE = HOST + "orden";
     public static String MENU_UPDATE_SERVICE = HOST + "updateproducto";
+    public static String REGISTRARSE_SERVICE = HOST + "cliente";
+
 
 
 }
