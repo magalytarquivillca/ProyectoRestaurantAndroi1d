@@ -36,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadComponents() {
         loginButton = this.findViewById(R.id.accederbut);
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        /*loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(root,inicio_login.class);
                 root.startActivity(intent);
             }
-        });
+        });*/
         h_pedidos = this.findViewById(R.id.textView2);
         h_pedidos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 root.startActivity(intent);
             }
         });
-        /*loginButton.setOnClickListener((new View.OnClickListener() {
+        loginButton.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 EditText email = root.findViewById(R.id.editTextTextPersonName);
@@ -65,14 +65,14 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (email.length() != 0 && password.length() != 0){*/
 
-                /*
+
                 //ENVIO A LA API
                 AsyncHttpClient client = new AsyncHttpClient();
                // AsyncHttpClient client1 = new AsyncHttpClient();
                 RequestParams params = new RequestParams();
 
 
-                params.add("nombre", email.getText().toString());
+                params.add("Nombre", email.getText().toString());
                 params.add("CI", password.getText().toString());
 
                 client.post(EndPoints.LOGIN_SERVICE, params, new JsonHttpResponseHandler(){
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             }
-        }));*/
+        }));
 
     }
 
