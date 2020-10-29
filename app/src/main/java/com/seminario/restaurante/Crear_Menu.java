@@ -148,6 +148,9 @@ public class Crear_Menu extends AppCompatActivity {
 
                 }
             });*/
+            //verificar
+            ImageView img = root.findViewById(R.id.menu);
+            img.setImageBitmap(imageBitmap);
             }
         });
     }

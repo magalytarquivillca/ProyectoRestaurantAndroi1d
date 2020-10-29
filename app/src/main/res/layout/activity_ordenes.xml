@@ -7,6 +7,17 @@
     tools:context=".Ordenes">
 
     <View
+        android:id="@+id/view21"
+        android:layout_width="402dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agregar5" />
+
+    <View
         android:id="@+id/view14"
         android:layout_width="404dp"
         android:layout_height="62dp"
@@ -44,8 +55,8 @@
         android:id="@+id/textView36"
         android:layout_width="85dp"
         android:layout_height="22dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
         android:text="Estado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/precioT" />
@@ -353,10 +364,11 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="80dp"
         android:text="GUARDAR ESTADO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioButton
