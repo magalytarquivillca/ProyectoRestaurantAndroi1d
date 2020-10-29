@@ -4,7 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_page_turner1"
     tools:context=".Lista_Restaurant">
+
+    <View
+        android:id="@+id/view20"
+        android:layout_width="402dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.985" />
 
     <ImageView
         android:id="@+id/imageView4"

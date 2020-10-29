@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_page_turner1"
     tools:context=".hacer_Pedidos">
 
     <View
         android:id="@+id/view13"
-        android:layout_width="449dp"
-        android:layout_height="65dp"
+        android:layout_width="414dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="4dp"
         android:background="@color/colorSecond2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:background="@drawable/rectangulo"
         android:text="Agregar"
         app:layout_constraintEnd_toStartOf="@+id/imageButton6"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,6 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:background="@drawable/rectangulo"
         android:text="Agregar"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,6 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:background="@drawable/rectangulo"
         android:text="Agregar"
         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,6 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:background="@drawable/rectangulo"
         android:text="Agregar"
         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,6 +110,7 @@
         android:layout_width="215dp"
         android:layout_height="32dp"
         android:layout_marginTop="10dp"
+        android:background="@drawable/rectangulo"
         android:text="TextView"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,6 +121,7 @@
         android:layout_width="209dp"
         android:layout_height="29dp"
         android:layout_marginTop="10dp"
+        android:background="@drawable/rectangulo"
         android:text="TextView"
         app:layout_constraintEnd_toStartOf="@+id/imageButton6"
         app:layout_constraintStart_toStartOf="parent"
@@ -123,6 +132,7 @@
         android:layout_width="209dp"
         android:layout_height="29dp"
         android:layout_marginTop="10dp"
+        android:background="@drawable/rectangulo"
         android:text="TextView"
         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
         app:layout_constraintStart_toStartOf="parent"
@@ -133,6 +143,7 @@
         android:layout_width="207dp"
         android:layout_height="29dp"
         android:layout_marginTop="10dp"
+        android:background="@drawable/rectangulo"
         android:text="TextView"
         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintStart_toStartOf="parent"
@@ -157,6 +168,7 @@
         android:layout_height="29dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="50dp"
+        android:background="@drawable/rectangulo"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hacer_pedido1" />
@@ -166,6 +178,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:background="@drawable/rectangulo"
         android:text="Agregar"
         app:layout_constraintEnd_toStartOf="@+id/imageButton1"
         app:layout_constraintStart_toStartOf="parent"
@@ -180,4 +193,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <View
+        android:id="@+id/view19"
+        android:layout_width="402dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agregar5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

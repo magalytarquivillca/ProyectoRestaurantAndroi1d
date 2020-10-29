@@ -4,7 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_page_turner1"
     tools:context=".Lista_Menu">
+
+    <View
+        android:id="@+id/view18"
+        android:layout_width="402dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <View
         android:id="@+id/view11"
