@@ -11,4 +11,29 @@ public class hacer_Pedidos2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hacer__pedidos2);
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        //Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        //Toast.makeText(this, "onResume", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        //Toast.makeText(this, "onPause", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        //Toast.makeText(this, "onStop", Toast.LENGTH_SHORT).show();
+    }
+
 }

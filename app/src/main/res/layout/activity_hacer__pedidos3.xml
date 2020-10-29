@@ -4,8 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorSecond"
+    android:background="@drawable/ic_page_turner1"
     tools:context=".hacer_Pedidos3">
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="402dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agregar5" />
 
     <EditText
         android:id="@+id/cant1"
@@ -67,7 +78,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/precioxcant1"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -79,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/precioxcant2"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapa"
@@ -174,14 +185,5 @@
         app:layout_constraintEnd_toEndOf="@+id/view8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view8" />
-
-    <View
-        android:id="@+id/view10"
-        android:layout_width="416dp"
-        android:layout_height="50dp"
-        android:background="@color/colorSecond2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

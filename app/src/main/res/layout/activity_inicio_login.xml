@@ -4,8 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorSecond"
+    android:background="@drawable/ic_page_turner1"
     tools:context=".inicio_login">
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="402dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agregar5" />
 
     <View
         android:id="@+id/view5"
@@ -19,7 +30,7 @@
     <TextView
         android:id="@+id/textView7"
         android:layout_width="140dp"
-        android:layout_height="19dp"
+        android:layout_height="25dp"
         android:layout_marginTop="8dp"
         android:text="CREACION"
         android:textAlignment="center"
@@ -64,18 +75,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:layout_constraintVertical_bias="0.207" />
-
-    <View
-        android:id="@+id/view6"
-        android:layout_width="405dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="336dp"
-        android:background="@color/colorSecond2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonresta"
-        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

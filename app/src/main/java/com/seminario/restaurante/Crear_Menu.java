@@ -50,6 +50,17 @@ public class Crear_Menu extends AppCompatActivity {
     }
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == code_camera && resultCode == RESULT_OK){
+            Bundle photo = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) photo.get("data");
+            ImageView img = root.findViewById(R.id.menu);
+            img.setImageBitmap(imageBitmap);
+        }
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
         //Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show();
