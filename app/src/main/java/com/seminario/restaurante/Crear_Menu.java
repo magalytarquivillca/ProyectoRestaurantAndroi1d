@@ -131,18 +131,23 @@ public class Crear_Menu extends AppCompatActivity {
             String id=Datos.substring(7,32);
             params2.add("id",id );
             params2.add("file", rutaimage);
-            //Toast.makeText(root, rutaimage, Toast.LENGTH_LONG).show();
-            client.put(EndPoints.MENU_UPDATE_SERVICE,params2 ,new JsonHttpResponseHandler(){
+            Toast.makeText(root, client.toString(), Toast.LENGTH_LONG).show();
+            /*client.put(EndPoints.MENU_UPDATE_SERVICE,params2 ,new JsonHttpResponseHandler(){
                 public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-                    //Datos=response.toString();
-                    Toast.makeText(root, response.toString(), Toast.LENGTH_LONG).show();
+                    try {
+                        //Datos=response.getString(0);
+                        Toast.makeText(root, response.getString(0), Toast.LENGTH_LONG).show();
+                        
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
     
                 }
                 public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
                     Toast.makeText(root, errorResponse.toString(), Toast.LENGTH_LONG).show();
 
                 }
-            });
+            });*/
             }
         });
     }
