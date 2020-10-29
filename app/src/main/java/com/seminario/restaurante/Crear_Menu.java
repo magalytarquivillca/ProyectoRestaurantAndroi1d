@@ -127,11 +127,11 @@ public class Crear_Menu extends AppCompatActivity {
                 }
             });
 
-            RequestParams params2 = new RequestParams();
+            /*RequestParams params2 = new RequestParams();
             String id=Datos.substring(7,32);
             params2.add("id",id );
-            params2.add("file", rutaimage);
-            Toast.makeText(root, client.toString(), Toast.LENGTH_LONG).show();
+            params2.add("file", rutaimage);*/
+            //Toast.makeText(root, client.toString(), Toast.LENGTH_LONG).show();
             /*client.put(EndPoints.MENU_UPDATE_SERVICE,params2 ,new JsonHttpResponseHandler(){
                 public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                     try {

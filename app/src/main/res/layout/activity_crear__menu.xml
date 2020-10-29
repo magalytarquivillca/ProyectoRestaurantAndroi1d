@@ -7,7 +7,8 @@
     android:background="@drawable/ic_page_turner1"
     android:paddingStart="10dp"
     android:scrollbarSize="100dp"
-    tools:context=".Crear_Menu">
+    tools:context=".Crear_Menu"
+    tools:ignore="RtlSymmetry">
 
     <View
         android:id="@+id/view9"
@@ -42,14 +43,16 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/rectangulo"
         android:ems="10"
-        android:hint="Nombre:"
+        android:hint="@string/nombre32"
         android:inputType="textPersonName"
         android:paddingStart="10dp"
         android:textColorHint="@android:color/tertiary_text_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view7" />
+        app:layout_constraintTop_toBottomOf="@+id/view7"
+        tools:ignore="RtlSymmetry"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTextPersonName12"
@@ -60,14 +63,16 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/rectangulo"
         android:ems="10"
-        android:hint="Precio:"
+        android:hint="@string/precio12"
         android:inputType="textPersonName"
         android:paddingStart="10dp"
         android:textColorHint="@android:color/tertiary_text_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NombreMenu" />
+        app:layout_constraintTop_toBottomOf="@+id/NombreMenu"
+        tools:ignore="RtlSymmetry"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTextPersonName13"
@@ -78,14 +83,16 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/rectangulo"
         android:ems="10"
-        android:hint="Descripcion:"
+        android:hint="@string/descripcion15"
         android:inputType="textPersonName"
         android:paddingStart="10dp"
         android:textColorHint="@android:color/tertiary_text_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12"
+        tools:ignore="RtlSymmetry"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/insertar"
@@ -95,7 +102,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:background="@color/colorSecond3"
-        android:text="INSERTAR"
+        android:text="@string/insertar13"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -111,7 +118,7 @@
         android:layout_marginEnd="40dp"
         android:background="@color/colorSecond3"
         android:drawableStart="@drawable/ic_baseline_camera_alt_24"
-        android:text="Tomar Foto"
+        android:text="@string/tomar_foto12"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -123,7 +130,7 @@
         android:layout_width="111dp"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
-        android:text=" Foto"
+        android:text="@string/foto12"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
@@ -136,7 +143,7 @@
         android:id="@+id/textView4"
         android:layout_width="129dp"
         android:layout_height="24dp"
-        android:text="CREAR MENU"
+        android:text="@string/crear_menu12"
         android:textAlignment="center"
         android:textColor="@color/common_google_signin_btn_text_dark_pressed"
         android:textSize="18sp"
@@ -154,6 +161,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:srcCompat="@android:drawable/sym_def_app_icon" />
+        app:srcCompat="@android:drawable/sym_def_app_icon"
+        android:contentDescription="@string/todo15" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
