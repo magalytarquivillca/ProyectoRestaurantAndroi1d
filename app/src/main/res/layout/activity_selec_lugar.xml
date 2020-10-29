@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_page_turner1"
+    tools:context=".SelecLugar">
+
+    <View
+        android:id="@+id/view22"
+        android:layout_width="402dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="449dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorSecond2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
+        android:text="Fast Food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:text="Mr. Beef"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boof" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
+        android:text="Las leñas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leñas" />
+
+    <ImageView
+        android:id="@+id/food"
+        android:layout_width="131dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <ImageView
+        android:id="@+id/boof"
+        android:layout_width="131dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <ImageView
+        android:id="@+id/mana"
+        android:layout_width="131dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="228dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="SELECCIONA UN LUGAR"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/leñas"
+        android:layout_width="131dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:text="Mana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mana" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

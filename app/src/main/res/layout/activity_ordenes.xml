@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ordenes">
+
+    <View
+        android:id="@+id/view21"
+        android:layout_width="402dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agregar5" />
+
+    <View
+        android:id="@+id/view14"
+        android:layout_width="404dp"
+        android:layout_height="62dp"
+        android:background="@color/colorSecond2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="Enviado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioButton2"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="Proceso"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton3"
+        app:layout_constraintStart_toEndOf="@+id/radioButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="85dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Estado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precioT" />
+
+    <TextView
+        android:id="@+id/precioT"
+        android:layout_width="85dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/food"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pxc2" />
+
+    <ImageView
+        android:id="@+id/food"
+        android:layout_width="84dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boof"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/pxc2"
+        android:layout_width="85dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/food"
+        app:layout_constraintTop_toBottomOf="@+id/des_prec2" />
+
+    <TextView
+        android:id="@+id/cantidad2"
+        android:layout_width="47dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/pxc2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des_prec2" />
+
+    <TextView
+        android:id="@+id/des_prec2"
+        android:layout_width="137dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cantidad1" />
+
+    <TextView
+        android:id="@+id/pxc1"
+        android:layout_width="85dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/boof"
+        app:layout_constraintTop_toBottomOf="@+id/des_prec1" />
+
+    <TextView
+        android:id="@+id/estado3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/c3"
+        app:layout_constraintTop_toBottomOf="@+id/estado2" />
+
+    <TextView
+        android:id="@+id/c3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/estado3"
+        app:layout_constraintStart_toEndOf="@+id/precio3"
+        app:layout_constraintTop_toBottomOf="@+id/c2" />
+
+    <TextView
+        android:id="@+id/precio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/c3"
+        app:layout_constraintStart_toEndOf="@+id/pedido_hora3"
+        app:layout_constraintTop_toBottomOf="@+id/precio2" />
+
+    <TextView
+        android:id="@+id/pedido_hora3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/precio3"
+        app:layout_constraintStart_toEndOf="@+id/codigo3"
+        app:layout_constraintTop_toBottomOf="@+id/pedido_hora2" />
+
+    <TextView
+        android:id="@+id/codigo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/pedido_hora3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codigo2" />
+
+    <TextView
+        android:id="@+id/estado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/c2"
+        app:layout_constraintTop_toBottomOf="@+id/estado1" />
+
+    <TextView
+        android:id="@+id/c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/estado2"
+        app:layout_constraintStart_toEndOf="@+id/precio2"
+        app:layout_constraintTop_toBottomOf="@+id/c1" />
+
+    <TextView
+        android:id="@+id/precio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/c2"
+        app:layout_constraintStart_toEndOf="@+id/pedido_hora2"
+        app:layout_constraintTop_toBottomOf="@+id/precio1" />
+
+    <TextView
+        android:id="@+id/pedido_hora2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/precio2"
+        app:layout_constraintStart_toEndOf="@+id/codigo2"
+        app:layout_constraintTop_toBottomOf="@+id/pedido_hora1" />
+
+    <TextView
+        android:id="@+id/codigo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/pedido_hora2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codigo1" />
+
+    <TextView
+        android:id="@+id/ordenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="ORDENES"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/codigo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/pedido_hora1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordenes" />
+
+    <TextView
+        android:id="@+id/pedido_hora1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/precio1"
+        app:layout_constraintStart_toEndOf="@+id/codigo1"
+        app:layout_constraintTop_toBottomOf="@+id/ordenes" />
+
+    <TextView
+        android:id="@+id/precio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/c1"
+        app:layout_constraintStart_toEndOf="@+id/pedido_hora1"
+        app:layout_constraintTop_toBottomOf="@+id/ordenes" />
+
+    <TextView
+        android:id="@+id/c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/estado1"
+        app:layout_constraintStart_toEndOf="@+id/precio1"
+        app:layout_constraintTop_toBottomOf="@+id/ordenes" />
+
+    <TextView
+        android:id="@+id/estado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/c1"
+        app:layout_constraintTop_toBottomOf="@+id/ordenes" />
+
+    <TextView
+        android:id="@+id/detalle_codigo"
+        android:layout_width="137dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codigo3" />
+
+    <TextView
+        android:id="@+id/des_prec1"
+        android:layout_width="137dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detalle_codigo" />
+
+    <TextView
+        android:id="@+id/cantidad1"
+        android:layout_width="47dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/pxc1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des_prec1" />
+
+    <ImageView
+        android:id="@+id/boof"
+        android:layout_width="84dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="GUARDAR ESTADO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="Espera"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
